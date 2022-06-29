@@ -21,15 +21,15 @@ function App() {
         <div>
             <img
                 src="images/pfp.jpeg"
-                className="rounded-full border-solid border-2 border-black w-28 mx-auto mt-10 mb-8"
+                className="mx-auto mt-10 mb-8 border-2 border-black border-solid rounded-full w-28"
             />
-            <h2 className="text-center font-custom text-3xl mb-3">
+            <h2 className="mb-3 text-3xl text-center font-custom">
                 Paul Valladares
             </h2>
-            <p className="text-center font-custom font-bold text-2xl mb-3">
+            <p className="mb-3 text-2xl font-bold text-center font-custom">
                 Frontend Developer based in Mexico
             </p>
-            <div className="flex flex-col max-w-5xl mx-auto">{mappedInfo}</div>
+            <div className="flex flex-col w-10/12 mx-auto">{mappedInfo}</div>
         </div>
     )
 }
