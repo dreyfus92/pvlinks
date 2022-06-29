@@ -5,7 +5,7 @@ function App() {
     return (
         <div>
             <img
-                src="../assets/images/pfp.jpeg"
+                src="images/pfp.jpeg"
                 className="rounded-full border-solid border-2 border-black w-28 mx-auto mt-10 mb-8"
             />
             <h2 className="text-center font-custom text-3xl mb-3">
