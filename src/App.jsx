@@ -1,7 +1,22 @@
 import './index.css'
-import { FaTwitter, FaGithub, FaInstagram } from 'react-icons/fa'
+import data from './data'
 
 function App() {
+    const mappedInfo = data.map((item, index) => {
+        return (
+            <button
+                key={index}
+                className={`${item.color} p-4 my-4 flex flex-row justify-center items-center shadow-custom-s hover:bg-green-nb`}
+                onClick={(e) => {
+                    e.preventDefault()
+                    window.open(item.url)
+                }}
+            >
+                {item.IconTitle}
+                <p>{item.socialMedia}</p>
+            </button>
+        )
+    })
     return (
         <div>
             <img
@@ -14,38 +29,7 @@ function App() {
             <p className="text-center font-custom font-bold text-2xl mb-3">
                 Frontend Developer based in Mexico
             </p>
-            <div className="flex flex-col max-w-5xl mx-auto">
-                <button
-                    className="bg-yellow-nb p-4 my-4 flex flex-row justify-center items-center shadow-custom-s hover:bg-green-nb"
-                    onClick={(e) => {
-                        e.preventDefault()
-                        window.open('https://twitter.com/soysarcasme')
-                    }}
-                >
-                    <FaTwitter className="mr-3" />
-                    <p>Twitter</p>
-                </button>
-                <button
-                    className="bg-red-nb p-4 my-4 flex flex-row justify-center items-center shadow-custom-s hover:bg-green-nb"
-                    onClick={(e) => {
-                        e.preventDefault()
-                        window.open('https://github.com/dreyfus92')
-                    }}
-                >
-                    <FaGithub className="mr-3" />
-                    <p>Github</p>
-                </button>
-                <button
-                    className="bg-pink-nb p-4 my-4 flex flex-row justify-center items-center shadow-custom-s hover:bg-green-nb"
-                    onClick={(e) => {
-                        e.preventDefault()
-                        window.open('https://www.instagram.com/sarcasme92')
-                    }}
-                >
-                    <FaInstagram className="mr-3" />
-                    <p>Instagram</p>
-                </button>
-            </div>
+            <div className="flex flex-col max-w-5xl mx-auto">{mappedInfo}</div>
         </div>
     )
 }
