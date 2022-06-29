@@ -11,7 +11,8 @@ module.exports = {
       'yellow-nb': '#FFF500',
       'green-nb': '#00FF75',
       'pink-nb': '#DD7DFF',
-      'red-nb': '#FF5E5E'
+      'red-nb': '#FF5E5E',
+      'orange-nb': '#FFB443'
     },
     extend: {
       boxShadow: {
