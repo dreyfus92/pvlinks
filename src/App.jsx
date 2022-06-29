@@ -23,10 +23,10 @@ function App() {
                 src="images/pfp.jpeg"
                 className="mx-auto mt-10 mb-8 border-2 border-black border-solid rounded-full w-28"
             />
-            <h2 className="mb-3 text-3xl text-center font-custom">
+            <h2 className="px-2 mb-3 text-3xl text-center font-custom">
                 Paul Valladares
             </h2>
-            <p className="mb-3 text-2xl font-bold text-center font-custom">
+            <p className="px-2 mb-3 text-2xl font-bold text-center font-custom">
                 Frontend Developer based in Mexico
             </p>
             <div className="flex flex-col w-10/12 mx-auto">{mappedInfo}</div>
