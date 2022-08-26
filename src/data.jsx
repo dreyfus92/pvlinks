@@ -1,4 +1,10 @@
-import { FaTwitter, FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
+import {
+    FaTwitter,
+    FaGithub,
+    FaInstagram,
+    FaLinkedinIn,
+} from 'react-icons/fa'
+import {SiFrontendmentor} from 'react-icons/si'
 export default [
     {
         socialMedia: 'Twitter',
@@ -24,4 +30,11 @@ export default [
         IconTitle: <FaLinkedinIn className="mr-3" />,
         color: 'bg-orange-nb',
     },
+    {
+        socialMedia: 'FrontendMentor',
+        url: 'https://www.frontendmentor.io/profile/dreyfus92',
+        IconTitle: <SiFrontendmentor className="mr-3" />,
+        color: 'bg-yellow-nb',
+    },
+
 ]
