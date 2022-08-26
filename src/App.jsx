@@ -21,7 +21,7 @@ function App() {
     return (
         <div>
             <img
-                src="images/pfp.jpeg"
+                src="images/dreyfusAnimeV2.png"
                 className="mx-auto mt-10 mb-8 border-2 border-black border-solid rounded-full w-28"
             />
             <h2 className="px-2 mb-3 text-3xl text-center font-custom">
