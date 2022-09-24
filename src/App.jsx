@@ -18,10 +18,15 @@ function App() {
             </button>
         )
     })
+    setTimeout(() => {
+        const main = document.getElementById('main-box')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+    }, 100)
     return (
-        <div>
+        <div id="main-box">
             <img
-                src="images/dreyfusAnimeV2.png"
+                src="/images/dreyfusAnimeV2.png"
                 className="mx-auto mt-10 mb-8 border-2 border-black border-solid rounded-full w-28"
             />
             <h2 className="px-2 mb-3 text-3xl text-center font-custom">
